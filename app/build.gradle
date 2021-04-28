@@ -25,9 +25,10 @@ repositories {
     }
 }
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'androidx.appcompat:appcompat:1.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(path: ':library')
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
    // compile project(':library')
-    compile 'info.androidramp:loading-gear:1.0.4'
+//    implementation 'info.androidramp:loading-gear:1.0.4'
 }
