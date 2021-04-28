@@ -94,6 +94,7 @@
             android:layout_gravity="center_horizontal|bottom"
             android:ellipsize="end"
             android:singleLine="true"
+            android:id="@+id/tvLoading"
             android:text="منتظر بمانید..."
             android:textSize="20dp"
             android:textStyle="bold" />

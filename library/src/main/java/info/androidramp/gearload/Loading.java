@@ -8,6 +8,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
+import info.androidramp.gearload.customView.MyTextView;
+
 /**
  * Created by Thanvandh on 06/05/2016.
  */
@@ -18,6 +20,7 @@ public class Loading extends LinearLayout {
     View vGearGreen;
     View vGearBlue;
     View vGearRed;
+    MyTextView tvLoading;
 
     Animation animGreen;
     Animation animBlue;
@@ -67,6 +70,8 @@ public class Loading extends LinearLayout {
         vGearGreen = loadingView.findViewById(R.id.gear_green);
         vGearBlue = loadingView.findViewById(R.id.gear_blue);
         vGearRed = loadingView.findViewById(R.id.gear_red);
+        tvLoading = (MyTextView) loadingView.findViewById(R.id.tvLoading);
+        tvLoading.setText("منتظر بمانید...");
 
         animGreen = AnimationUtils.loadAnimation(context, R.anim.loading_rotate_clock);
         animBlue = AnimationUtils.loadAnimation(context, R.anim.loading_rotate_anti_clock);
