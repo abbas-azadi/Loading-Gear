@@ -28,6 +28,13 @@ public class Loading extends LinearLayout {
 
     Context context;
 
+    public MyTextView getTvLoading() {
+        return tvLoading;
+    }
+
+    public void setTvLoading(MyTextView tvLoading) {
+        this.tvLoading = tvLoading;
+    }
 
     public Loading(Context context) {
         super(context);
